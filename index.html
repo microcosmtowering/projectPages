@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script src=js/jquery.min.js></script>
+    <style>
+        body {
+            background-color: deepskyblue;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">你好，世界！</div>
-    <input type="button" value="跳转" id="btn"></input>
+<div class="header">你好，世界！</div>
+<input type="button" value="跳转" id="btn"></input>
 </body>
 <script>
     $("#btn").click(function () {
         alert(123);
+        $(".header").css("color", "red");
     });
 </script>
 </html>
